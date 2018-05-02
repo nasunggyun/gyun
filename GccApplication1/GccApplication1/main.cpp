@@ -24,10 +24,10 @@ int main(void)
 		_delay_ms(100);
 
 		PORTD = PORTD << 1;
-		_delay_ms(300);
+		_delay_ms(900);
 		if(PORTD == 0x00){
 			PORTD = 0xff;
-			_delay_ms(300);
+			_delay_ms(900);
 		}
 		//PORTD = 0x00;
 		//_delay_ms(500);
