@@ -17,10 +17,16 @@ int main(void)
 	/* Replace with your application code */
 	while (1)
 	{
-		PORTD = 0x00;
+		PORTD = PORTD << 1;
 		_delay_ms(500);
-		PORTD = 0xff;
-		_delay_ms(500);
+		if(PORTD == 0x00){
+			PORTD = 0xff;
+			_delay_ms(500);
+		}
+		//PORTD = 0x00;
+		//_delay_ms(500);
+		//PORTD = 0xff;
+		//_delay_ms(500);
 		
 	}
 }
