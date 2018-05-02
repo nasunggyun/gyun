@@ -18,10 +18,10 @@ int main(void)
 	while (1)
 	{
 		PORTD = PORTD << 1;
-		_delay_ms(500);
+		_delay_ms(200);
 		if(PORTD == 0x00){
 			PORTD = 0xff;
-			_delay_ms(500);
+			_delay_ms(200);
 		}
 		//PORTD = 0x00;
 		//_delay_ms(500);
